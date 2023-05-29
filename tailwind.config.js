@@ -23,6 +23,7 @@ module.exports = {
         'beige': '#BAA68C',
         'blue': '#95A7B4',
         'grey': '#B8B9B8',
+        'red': 'rgb(230,0,0)'
       },
     },
   },

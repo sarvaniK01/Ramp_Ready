@@ -1,5 +1,5 @@
 import React from 'react'
-import Rent from '@/components/Rent'
+import Rent from '@/components/Rent/Rent'
 
 function rent() {
   return (
