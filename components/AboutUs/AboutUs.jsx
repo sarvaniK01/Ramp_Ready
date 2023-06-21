@@ -21,7 +21,7 @@ function AboutUs() {
         <div className='pt-10 px-24 font-semimedium text-xl'>
           <p className='text-center text-2xl font-semibold'>Ramp Ready is a website where you can choose from a variety of clothes and rent it for an occasion!</p>
 
-          <div className="flex flex-row gap-x-5 py-10">
+          <div className="flex flex-col md:flex-row gap-5 py-10">
             <Image
               src={shop2}
               alt="shop"
@@ -52,7 +52,7 @@ function AboutUs() {
             To make fashion sustainable we have introduced Ramp Ready to help you pick up outfits for your next happening occasion. <br />
           </div>
 
-          <div className="flex flex-row gap-x-5 py-10">
+          <div className="flex flex-col md:flex-row gap-5 py-10">
             <Image
               src={woman1}
               alt="shop"

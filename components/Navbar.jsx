@@ -7,7 +7,10 @@ function Navbar() {
   return (
     <div className='font-Playfair font-bold text-xl w-full'>
         <div className='bg-white fixed flex justify-between border-b border-black shadow-md px-8 py-3 w-full z-10'>
-            <Image src={logo} alt="logo" width="80" className=''/>
+            <Link href="/">
+                <Image src={logo} alt="logo" width="80" className=''/>
+            </Link>
+            
             <ul className='flex my-auto gap-x-8'>
                 {/* HOME */}
                 <Link href="/">

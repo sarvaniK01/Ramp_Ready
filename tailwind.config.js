@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'Playfair': ['Playfair', 'serif'],
+        'Courier': ['Courier Prime', 'monospace']
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
