@@ -43,7 +43,7 @@ function Rent() {
       <Navbar/>
       <div>
         <p className='pt-32 font-Playfair text-black text-center text-5xl font-bold'>Rent</p>
-        <div className='relative pt-12 flex justify-between font-Playfair text-xl pt-40 pb-20 px-40'>
+        <div className='relative pt-12 flex justify-between font-Playfair text-xl py-20 px-40'>
           {/* MEN */}
           <div className='border p-2'>
             <div className='w-[19rem] mx-auto'>

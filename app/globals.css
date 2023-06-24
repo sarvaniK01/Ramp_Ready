@@ -63,6 +63,38 @@
 	z-index: 7;
 }
 
+.rent-links{
+    display: flex;
+    position: relative;
+    width: fit-content;
+}
+  
+.rent-links::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #BAA68C;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.rent-links:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.content{
+    display: none;
+}
+
+.show-content{
+    display: block;
+}
+
 /* FAQs */
 .accordion__button {
     background-color: #baa68cf3;
