@@ -51,6 +51,46 @@ function Formal() {
               product="Teal Blazer"
               price="INR 500"
             />
+
+            {/* Suits*/}
+            <CategoryCard
+              image={BlackSuit}
+              brand="Van Heusen"
+              product="Black Fitted Suit"
+              price="INR 700"
+            />
+            <CategoryCard
+              image={NavySuit}
+              brand="Peter England"
+              product="Navy Blue Suit"
+              price="INR 650"
+            />
+            <CategoryCard
+              image={CharcoalSuit}
+              brand="Van Heusen"
+              product="Charcoal Suit"
+              price="INR 750"
+            />
+
+            {/* Trousers*/}
+            {/* <CategoryCard
+              image={BlackTrousers}
+              brand="Van Heusen"
+              product="Black Fitted Trousers"
+              price="INR 400"
+            /> */}
+            <CategoryCard
+              image={GreyTrousers}
+              brand="Peter England"
+              product="Grey Trousers"
+              price="INR 350"
+            />
+            <CategoryCard
+              image={BlueTrousers}
+              brand="Van Heusen"
+              product="Blue Trousers"
+              price="INR 450"
+            />
         </div>
     </>
   )
