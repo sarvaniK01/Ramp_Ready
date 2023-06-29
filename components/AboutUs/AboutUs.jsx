@@ -25,12 +25,12 @@ function AboutUs() {
             <Image
               src={shop2}
               alt="shop"
-              width={500}
+              width={460}
             />
             <Image
               src={shop1}
               alt="shop"
-              width={500}
+              width={460}
             />
           </div>
 
@@ -56,12 +56,12 @@ function AboutUs() {
             <Image
               src={woman1}
               alt="shop"
-              width={500}
+              width={460}
             />
             <Image
               src={man1}
               alt="shop"
-              width={500}
+              width={460}
             />
           </div>
 

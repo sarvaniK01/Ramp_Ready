@@ -12,10 +12,22 @@ import CasualWomen from './CasualWomen';
 import TraditionalWomen from "./TraditionalWomen"
 import DressesWomen from "./DressesWomen"
 
-import BeigeCargoPants from "../../public/assets/Rent/Rent-Main/Men/Casual/bottoms/beige-cargo-pants.png"
-import BlackSuit from "../../public/assets/Rent/Rent-Main/Men/Formal/suits/black-checked-suit.png"
-import BlueTshirt from "../../public/assets/Rent/Rent-Main/Men/Casual/tshirts/blue-tshirt.png"
-import PurpleKurta from "../../public/assets/Rent/Rent-Main/Men/Traditional/purple-kurta-set.png"
+import PinkBlazer from '../../public/assets/Rent/Rent-Main/Women/formal/pink-fitted-blazer.png'
+import BlackTrousers from '../../public/assets/Rent/Rent-Main/Women/formal/balc-mid-rise-striped-trousers.png'
+import RustTop from '../../public/assets/Rent/Rent-Main/Women/formal/rust-peplum-top.png'
+import LavenderShirt from '../../public/assets/Rent/Rent-Main/Women/formal/solid-lavender-formal-shirt.png'
+
+import MochaBrownCargoPants from "../../public/assets/Rent/Rent-Main/Women/casual/mocha-brown-cargo-pants.png"
+import BlueDungaree from "../../public/assets/Rent/Rent-Main/Women/casual/blue-denim-dungaree.png"
+import GreenRibbedTop from "../../public/assets/Rent/Rent-Main/Women/casual/green-solid-ribbed-top.png"
+
+import BlackStripedKurta from "../../public/assets/Rent/Rent-Main/Women/traditional/black-teal-and-yellow-striped-long-kurta.png"
+import PinkSilkLehenga from "../../public/assets/Rent/Rent-Main/Women/traditional/deep-pink-silk-lehenga.png"
+import GreenKSaree from "../../public/assets/Rent/Rent-Main/Women/traditional/sea-green-traditional-kanjeevaram-saree.png"
+
+import BlackPartyDress from "../../public/assets/Rent/Rent-Main/Women/dresses/black-and-silver-party-dress.png"
+import BlueFloralDress from "../../public/assets/Rent/Rent-Main/Women/dresses/blue-floral-dress.png"
+import GreenJumpsuit from "../../public/assets/Rent/Rent-Main/Women/dresses/solid-green-casual-jumpsuit.png"
 
 
 function Women() {
@@ -77,28 +89,85 @@ function Women() {
             <div className={toggle === 0 ? "show-content" : "content"}>
               <div className='grid grid-cols-3 gap-x-7 gap-y-10'>
                 <CategoryCard
-                  image={BlackSuit}
-                  brand="Flying Machine"
-                  product="Beige cargo Pants"
-                  price="INR 300"
+                  image={PinkBlazer}
+                  brand="Van Heusen"
+                  product="Pink Blazer"
+                  price="INR 400"
                 />
                 <CategoryCard
-                  image={BlueTshirt}
-                  brand="Flying Machine"
-                  product="Beige cargo Pants"
-                  price="INR 300"
+                  image={BlackTrousers}
+                  brand="Levi's"
+                  product="Black Striped Trousers"
+                  price="INR 450"
                 />
                 <CategoryCard
-                  image={PurpleKurta}
-                  brand="Flying Machine"
-                  product="Beige cargo Pants"
-                  price="INR 300"
+                  image={RustTop}
+                  brand="Sassaffras"
+                  product="Rust Top"
+                  price="INR 430"
                 />
                 <CategoryCard
-                  image={BeigeCargoPants}
-                  brand="Flying Machine"
-                  product="Beige cargo Pants"
-                  price="INR 300"
+                  image={LavenderShirt}
+                  brand="Van Heusen"
+                  product="Lavender Shirt"
+                  price="INR 450"
+                />
+
+                <CategoryCard
+                  image={MochaBrownCargoPants}
+                  brand="H&M"
+                  product="Brown Cargo Pants"
+                  price="INR 400"
+                />
+                <CategoryCard
+                  image={BlueDungaree}
+                  brand="Zara"
+                  product="Blue Dungaree"
+                  price="INR 480"
+                />
+                <CategoryCard
+                  image={GreenRibbedTop}
+                  brand="H&M"
+                  product="Green Ribbed Top"
+                  price="INR 340"
+                />
+
+                <CategoryCard
+                  image={BlackStripedKurta}
+                  brand="Indya"
+                  product="Black Striped Kurta"
+                  price="INR 400"
+                />
+                <CategoryCard
+                  image={PinkSilkLehenga}
+                  brand="Manish Malhotra"
+                  product="Pink Silk Lehenga"
+                  price="INR 850"
+                />
+                <CategoryCard
+                  image={GreenKSaree}
+                  brand="Chennai Silks"
+                  product="Green Kanjeevaram Saree"
+                  price="INR 980"
+                />
+
+                <CategoryCard
+                  image={BlackPartyDress}
+                  brand="Zara"
+                  product="Black Party Dress"
+                  price="INR 420"
+                />
+                <CategoryCard
+                  image={BlueFloralDress}
+                  brand="Westside"
+                  product="Blue Floral Dress"
+                  price="INR 380"
+                />
+                <CategoryCard
+                  image={GreenJumpsuit}
+                  brand="Myntra"
+                  product="Green Jumpsuit"
+                  price="INR 370"
                 />
               </div>
               

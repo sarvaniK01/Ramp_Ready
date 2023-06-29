@@ -68,27 +68,27 @@ function Men() {
               <div className='grid grid-cols-3 gap-x-7 gap-y-10'>
                 <CategoryCard
                   image={BlackSuit}
-                  brand="Flying Machine"
-                  product="Beige cargo Pants"
-                  price="INR 300"
+                  brand="Vah Heusen"
+                  product="Black Striped Suit"
+                  price="INR 420"
                 />
                 <CategoryCard
                   image={BlueTshirt}
-                  brand="Flying Machine"
-                  product="Beige cargo Pants"
+                  brand="Levi's"
+                  product="Blue Tshirt"
                   price="INR 300"
                 />
                 <CategoryCard
                   image={PurpleKurta}
-                  brand="Flying Machine"
-                  product="Beige cargo Pants"
-                  price="INR 300"
+                  brand="Manyavar"
+                  product="Purple Kurta"
+                  price="INR 440"
                 />
                 <CategoryCard
                   image={BeigeCargoPants}
                   brand="Flying Machine"
                   product="Beige cargo Pants"
-                  price="INR 300"
+                  price="INR 350"
                 />
               </div>
               

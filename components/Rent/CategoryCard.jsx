@@ -8,9 +8,9 @@ function CategoryCard({image, brand, product, price}) {
   return (
     <>
         <div className='border hover:transition hover:ease-linear hover:duration-400 hover:delay-200 hover:border-black p-2'>
-          <Image src={image} alt="beige cargo pants" width={200} className='border'/>
+          <Image src={image} alt="beige cargo pants" width={220} className='border'/>
           <p className='font-bold'>{brand}</p>
-          <p>{product}</p>
+          <p className=''>{product}</p>
           <p className='font-bold'>{price}</p>
         </div>     
     </>
