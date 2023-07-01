@@ -5,6 +5,11 @@ import React , { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { ImQuotesLeft, ImQuotesRight } from "react-icons/im"
+
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
 import CategoryCard from '../Rent/CategoryCard';
 
 import HeroImage from "../../public/assets/Home/hero-image.jpg"
@@ -37,6 +42,14 @@ import BlackPartyDress from "../../public/assets/Rent/Rent-Main/Women/dresses/bl
 import GreenJumpsuit from "../../public/assets/Rent/Rent-Main/Women/dresses/solid-green-casual-jumpsuit.png"
 import BlueDungaree from "../../public/assets/Rent/Rent-Main/Women/casual/blue-denim-dungaree.png"
 
+// customers
+import EmilyCooper from "../../public/assets/Home/emily.png"
+import Gabriel from "../../public/assets/Home/gabriel.png"
+import Alfie from "../../public/assets/Home/alfie.png"
+import MindyChen from "../../public/assets/Home/ashley.jpg"
+import Camille from "../../public/assets/Home/camille.jpg"
+import Sylvie from "../../public/assets/Home/sylvie.jpeg"
+
 
 import { BsArrowUpRight } from 'react-icons/bs'
 
@@ -46,6 +59,26 @@ import Footer from '../Footer'
 function Homepage() {
 
   const [option, setOption] = useState(false)
+  
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 3
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 2
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
 
   return (
     <>
@@ -243,8 +276,8 @@ function Homepage() {
           </p>
 
           <div className='flex flex-row gap-x-20 py-5 justify-center text-2xl'>
-            <p className='cursor-pointer' onClick={() => setOption(false)}>Men</p>
-            <p className='cursor-pointer' onClick={() => setOption(true)}>Women</p>
+            <p className={`cursor-pointer menu-links ${option ? "no-underline" : "underline decoration-beige underline-offset-8"}`} onClick={() => setOption(false)}>Men</p>
+            <p onClick={() => setOption(true)} className={`cursor-pointer menu-links ${option ? "underline decoration-beige underline-offset-8" : "no-underline"}`}>Women {option}</p>
           </div>
 
           {option ? 
@@ -331,8 +364,62 @@ function Homepage() {
         <div className='bg-black h-[0.5px] w-full'></div>
         {/* What People Say About us */}
         <div className='m-20'>
-          <p className='text-4xl font-bold text-center'>What Customers say about us</p>
+          <p className='text-4xl font-bold text-center'>What our customers say about us</p>
+          <Carousel responsive={responsive}>
+            {/* Emily Cooper */}
+            <div className='border border-white h-[25rem] w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige'>
+              <Image src={EmilyCooper} alt="arya-pic" className='w-24 rounded-full mx-auto border border-white border-2'/>
+              <p className='font-bold text-xl text-center py-5 text-white'>Emily Cooper</p>
+              <ImQuotesLeft className='text-white text-xl mx-auto'/>
+              <p className='text-white text-center pt-1'>It is a wonderful website to rent clothes with reasonable prices. I have rented clothes for several occasions and they are worth thier price!</p>
+              <ImQuotesRight className='text-white pt-1 text-2xl mx-auto'/>
+            </div>
 
+            {/* Gabriel */}
+            <div className='border border-white h-[25rem] w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige'>
+              <Image src={Gabriel} alt="arya-pic" className='w-24 rounded-full mx-auto border border-white border-2'/>
+              <p className='font-bold text-xl text-center py-5 text-white'>Gabriel</p>
+              <ImQuotesLeft className='text-white text-xl mx-auto'/>
+              <p className='text-white text-center pt-1'>It is a has a diverse range of products to choose from and the procedure is also hassle-free. I am a very frequent rentee of Ramp Ready.</p>
+              <ImQuotesRight className='text-white pt-1 text-2xl mx-auto'/>
+            </div>
+
+            {/* Alfie */}
+            <div className='border border-white h-[25rem] w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige'>
+              <Image src={Alfie} alt="arya-pic" className='w-24 rounded-full mx-auto border border-white border-2'/>
+              <p className='font-bold text-xl text-center py-5 text-white'>Alfie</p>
+              <ImQuotesLeft className='text-white text-xl mx-auto'/>
+              <p className='text-white text-center pt-1'>I have rented clothes for different occasions and I am very happy with the service. The products are of high quality and classy at the same time!</p>
+              <ImQuotesRight className='text-white pt-1 text-2xl mx-auto'/>
+            </div>
+
+            {/* Camille */}
+            <div className='border border-white h-[25rem] w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige'>
+              <Image src={Camille} alt="arya-pic" className='w-24 rounded-full mx-auto border border-white border-2'/>
+              <p className='font-bold text-xl text-center py-5 text-white'>Camille</p>
+              <ImQuotesLeft className='text-white text-xl mx-auto'/>
+              <p className='text-white text-center pt-1'>Ramp Ready has saved me thousands of dollars and invaluable time.I no longer have to worry about what I&apos;m going to wear.</p>
+              <ImQuotesRight className='text-white pt-1 text-2xl mx-auto'/>
+            </div>
+
+            {/* Mindy Chen */}
+            <div className='border border-white h-[25rem] w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige'>
+              <Image src={MindyChen} alt="arya-pic" className='w-24 rounded-full mx-auto border border-white border-2'/>
+              <p className='font-bold text-xl text-center py-5 text-white'>Mindy Chen</p>
+              <ImQuotesLeft className='text-white text-xl mx-auto'/>
+              <p className='text-white text-center pt-1'>I feel more confident now through the way I dress, and I feel great that I&apos;m making a sustainable choice each time I rent.</p>
+              <ImQuotesRight className='text-white pt-1 text-2xl mx-auto'/>
+            </div>
+
+            {/* Sylvie */}
+            <div className='border border-white h-[25rem] w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige'>
+              <Image src={Sylvie} alt="arya-pic" className='w-24 rounded-full mx-auto border border-white border-2'/>
+              <p className='font-bold text-xl text-center py-5 text-white'>Sylvie</p>
+              <ImQuotesLeft className='text-white text-xl mx-auto'/>
+              <p className='text-white text-center pt-1'>I get to wear top designers every day! I always imagined I could live this life, but now it&apos;s a reality.</p>
+              <ImQuotesRight className='text-white pt-1 text-2xl mx-auto'/>
+            </div>
+          </Carousel>
         </div>
 
         <div className='bg-black h-[0.5px] w-full'></div>

@@ -20,7 +20,7 @@ function Footer() {
                 <li className='py-2 menu-links'>Rent</li>
               </Link>
 
-              <Link href="/outfits">
+              <Link href="/">
                 <li className='py-2 menu-links'>Outfit Ideas</li>
               </Link>
             </ul>

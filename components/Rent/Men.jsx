@@ -33,7 +33,7 @@ function Men() {
           <div className='pt-52 pb-20 px-20'>
             <p className='pb-6 text-2xl font-bold'>Filters</p>
             <Accordion>
-              <AccordionItem className="text-xl my-3 rent-links" header="Formal" onClick={() => updateToggle(1)}>
+              <AccordionItem onClick={() => updateToggle(1)} className={`text-xl my-3 rent-links ${toggle === 1 ? 'underline decoration-beige underline-offset-8' : 'no-underline'}`} header="Formal">
                 <div className='pl-3'>
                   {/* <p className='text-lg cursor-pointer hover:scale-105 rent-links'>Shirts</p>
                   <p className='text-lg cursor-pointer hover:scale-105 rent-links'>Trousers</p>
