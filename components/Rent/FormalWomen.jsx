@@ -30,8 +30,8 @@ import PinkShirt from '../../public/assets/Rent/Rent-Main/Women/formal/pink-full
 function FormalWomen() {
   return (
     <>
-        <p className='text-center mb-8  tracking-widest font-Playfair text-white bg-black/70 text-2xl'>Formal Wear</p>
-        <div className='grid grid-cols-3 gap-x-7 gap-y-10'>
+        <p className='text-center mb-8 mx-5 tracking-widest font-Playfair text-white bg-black/70 text-2xl'>Formal Wear</p>
+        <div className='mx-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10'>
             {/* Blazers */}
             <CategoryCard
               image={PinkBlazer}

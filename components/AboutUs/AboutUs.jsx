@@ -17,8 +17,8 @@ function AboutUs() {
     <>
       <Navbar />
       <div className='font-Playfair pt-28 pb-20'>
-        <p className='text-5xl font-bold pt-16 text-center'>About Us</p>
-        <div className='pt-10 px-24 font-semimedium text-xl'>
+        <p className='text-3xl md:text-5xl font-bold pt-16 text-center'>About Us</p>
+        <div className='pt-10 mx-6 md:px-24 font-semimedium text-lg md:text-xl'>
           <p className='text-center text-2xl font-semibold'>Ramp Ready is a website where you can choose from a variety of clothes and rent it for an occasion!</p>
 
           <div className="flex flex-col md:flex-row gap-5 py-10">

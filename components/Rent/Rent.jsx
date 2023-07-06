@@ -43,10 +43,10 @@ function Rent() {
       <Navbar/>
       <div>
         <p className='pt-32 font-Playfair text-black text-center text-5xl font-bold'>Rent</p>
-        <div className='relative pt-12 flex justify-between font-Playfair text-xl py-20 px-40'>
+        <div className='relative pt-12 flex flex-col md:flex-row md:gap-x-5 lg:gap-x-20 justify-center font-Playfair text-xl py-20 mx-10 md:px-40'>
           {/* MEN */}
-          <div className='border p-2'>
-            <div className='w-[19rem] mx-auto'>
+          <div className='border p-2 mb-10'>
+            <div className='w-[13rem] md:w-[19rem] mx-auto'>
               <Slider infinite autoplay previousButton=" " nextButton=" ">
                 {menSlides.map((slide, index) => 
                   <div key={index} className=''>
@@ -70,8 +70,8 @@ function Rent() {
           </div>
           
           {/* WOMEN */}
-          <div className='border p-2'>
-            <div className='w-[19rem]'>
+          <div className='border p-2 mb-10'>
+            <div className='w-[13rem] md:w-[19rem] mx-auto'>
               <Slider infinite autoplay previousButton=" " nextButton=" ">
                 {womenSlides.map((slide, index) => 
                   <div key={index} className=''>

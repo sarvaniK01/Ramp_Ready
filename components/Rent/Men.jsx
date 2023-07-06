@@ -27,10 +27,10 @@ function Men() {
   return (
     <>
       <Navbar/>
-      <div className='flex flex-row font-Playfair'>
+      <div className='flex  flex-col md:flex-row font-Playfair'>
         <div className='border-r border-black'>
           {/* Categories */}
-          <div className='pt-52 pb-20 px-20'>
+          <div className='py-10 md:pt-52 md:pb-20 px-20'>
             <p className='pb-6 text-2xl font-bold'>Filters</p>
             <Accordion>
               <AccordionItem onClick={() => updateToggle(1)} className={`text-xl my-3 rent-links ${toggle === 1 ? 'underline decoration-beige underline-offset-8' : 'no-underline'}`} header="Formal">
@@ -61,11 +61,11 @@ function Men() {
         </div>
 
         <div className='mx-auto'>
-          <p className='pt-32 font-bold text-center text-5xl'>Men&apos;s Wear</p>
+          <p className='pt-5 md:pt-32 font-bold text-center text-5xl'>Men&apos;s Wear</p>
           {/* Category Cards */}
           <div className='pt-14 pb-20 '>
             <div className={toggle === 0 ? "show-content" : "content"}>
-              <div className='grid grid-cols-3 gap-x-7 gap-y-10'>
+              <div className='mx-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10'>
                 <CategoryCard
                   image={BlackSuit}
                   brand="Vah Heusen"

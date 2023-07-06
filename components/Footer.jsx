@@ -8,7 +8,7 @@ function Footer() {
   return (
     <>
         <div className='border border-t-black font-Playfair font-bold text-xl p-14'>
-          <div className='flex justify-between'>
+          <div className='flex flex-col md:flex-row justify-between'>
             <Image src={logo} alt="logo"/>
             {/* MENU */}
             <ul className='my-auto flex flex-col'>
@@ -39,7 +39,7 @@ function Footer() {
             </ul>
             {/* SOCIAL LINKS */}
             <div className='my-auto'>
-              <p>Follow us on:</p>
+              <p className='font-bold pt-10 md:pt-0'>Follow us on:</p>
               <div className='flex flex-row gap-x-5 pt-5'> 
                 <Link href="./facebook">
                   <BsFacebook className='hover:scale-125 hover:ease-in-out hover:duration-300'/>
