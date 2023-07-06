@@ -9,7 +9,7 @@ A garment rental website
 
 ## Website Link: 
 The website is hosted on vercel.
-[Ramp Ready](ramp-ready.vercel.app "Ramp Ready") 
+[Ramp Ready](ramp-ready.vercel.app) 
 
 ## General info
  The project is a Garment Rental website
