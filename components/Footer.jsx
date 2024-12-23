@@ -8,52 +8,54 @@ function Footer() {
   return (
     <>
         <div className='border border-t-black font-Playfair font-bold text-xl p-14'>
-          <div className='flex flex-col md:flex-row justify-between'>
-            <Image src={logo} alt="logo"/>
+        <div className='flex flex-col md:flex-row justify-between'>
+          <Link href='/'>
+            <Image src={logo} alt="logo" className='mx-auto md:mx-0'/>
+          </Link>
             {/* MENU */}
-            <ul className='my-auto flex flex-col'>
+            <div className='my-auto flex flex-col text-center md:text-left'>
               <Link href="/">
-                <li className='py-2 menu-links'>Home</li>
+                <span className='my-1 py-1 menu-links'>Home</span>
               </Link>
               
               <Link href="/rent">
-                <li className='py-2 menu-links'>Rent</li>
+                <span className='my-1 py-1 menu-links'>Rent</span>
               </Link>
 
               <Link href="/">
-                <li className='py-2 menu-links'>Outfit Ideas</li>
+                <span className='my-1 py-1 menu-links'>Outfit Ideas</span>
               </Link>
-            </ul>
-            <ul className='my-auto flex flex-col'>
+            </div>
+            <div className='my-auto flex flex-col text-center md:text-left'>
               <Link href="/about">
-                <li className='py-2 menu-links'>About Us</li>
+                <span className='my-1 py-1 menu-links'>About Us</span>
               </Link>
 
               <Link href="/faq">
-                <li className='py-2 menu-links'>FAQ</li>
+                <span className='my-1 py-1 menu-links'>FAQ</span>
               </Link>
 
               <Link href="/contact">
-                <li className='py-2 menu-links'>Contact</li>
+                <span className='my-1 py-1 menu-links'>Contact</span>
               </Link>
-            </ul>
+            </div>
             {/* SOCIAL LINKS */}
-            <div className='my-auto'>
-              <p className='font-bold pt-10 md:pt-0'>Follow us on:</p>
+            <div className='my-auto mx-auto md:mx-0'>
+              <p className='font-bold pt-10 md:pt-0 text-center'>Follow us on:</p>
               <div className='flex flex-row gap-x-5 pt-5'> 
-                <Link href="./facebook">
+                <Link href="https://www.facebook.com/" target='_blank' aria-label='facebook-icon'>
                   <BsFacebook className='hover:scale-125 hover:ease-in-out hover:duration-300'/>
                 </Link>
 
-                <Link href="/">
+                <Link href="https://www.instagram.com/" target='_blank' aria-label='instagram-icon'>
                   <BsInstagram className='hover:scale-125 hover:ease-in-out hover:duration-300'/>
                 </Link>
                 
-                <Link href="/">
+                <Link href="https://x.com/" target='_blank' aria-label='twitter-icon'>
                   <BsTwitter className='hover:scale-125 hover:ease-in-out hover:duration-300'/>
                 </Link>
 
-                <Link href="/">
+                <Link href="https://in.pinterest.com/" target='_blank' aria-label='pinterest-icon'>
                   <BsPinterest className='hover:scale-125 hover:ease-in-out hover:duration-300'/>
                 </Link>
               </div>

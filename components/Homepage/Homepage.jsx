@@ -12,18 +12,18 @@ import 'react-multi-carousel/lib/styles.css';
 
 import CategoryCard from '../Rent/CategoryCard';
 
-import HeroImage from "../../public/assets/Home/hero-image.jpg"
+import HeroImage from "../../public/assets/Home/hero-image.webp"
 
 // men
 import MenFormal from "../../public/assets/Home/men-formal.jpg"
 import MenCasual from "../../public/assets/Home/men-casual.jpg"
-import MenTraditional from "../../public/assets/Home/men-traditional.jpg"
+import MenTraditional from "../../public/assets/Home/men-traditional.webp"
 
 // women
-import WomenFormal from "../../public/assets/Home/women-formal.jpg"
-import WomenCasual from "../../public/assets/Home/women-casual.jpg"
+import WomenFormal from "../../public/assets/Home/women-formal.webp"
+import WomenCasual from "../../public/assets/Home/women-casual.webp"
 import WomenTraditional from "../../public/assets/Home/women-traditional.jpg"
-import WomenDresses from "../../public/assets/Home/women-dress.jpg"
+import WomenDresses from "../../public/assets/Home/women-dress.webp"
 
 // bestsellers
 // men
@@ -43,12 +43,12 @@ import GreenJumpsuit from "../../public/assets/Rent/Rent-Main/Women/dresses/soli
 import BlueDungaree from "../../public/assets/Rent/Rent-Main/Women/casual/blue-denim-dungaree.png"
 
 // customers
-import EmilyCooper from "../../public/assets/Home/emily.png"
-import Gabriel from "../../public/assets/Home/gabriel.png"
-import Alfie from "../../public/assets/Home/alfie.png"
-import MindyChen from "../../public/assets/Home/ashley.jpg"
-import Camille from "../../public/assets/Home/camille.jpg"
-import Sylvie from "../../public/assets/Home/sylvie.jpeg"
+import EmilyCooper from "../../public/assets/Home/emily.webp"
+import Gabriel from "../../public/assets/Home/gabriel.webp"
+import Alfie from "../../public/assets/Home/alfie.webp"
+import MindyChen from "../../public/assets/Home/ashley.webp"
+import Camille from "../../public/assets/Home/camille.webp"
+import Sylvie from "../../public/assets/Home/sylvie.webp"
 
 
 import { BsArrowUpRight } from 'react-icons/bs'
@@ -67,11 +67,11 @@ function Homepage() {
       items: 3
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 2  
+      breakpoint: { max: 1440, min: 1150 },
+      items: 3 
     },
     tablet: {
-      breakpoint: { max: 1024, min: 767 },
+      breakpoint: { max: 1150, min: 767 },
       items: 2
     },
     mobile: {
@@ -81,12 +81,12 @@ function Homepage() {
   };
 
   return (
-    <>
+    <div className=' max-w-[1536px] mx-auto'>
       <Navbar />
       <div className='font-Playfair md:pt-24'>
         {/* HERO */}
         <div className='relative text-center'> 
-          <Image src={HeroImage} alt="Hero-image" className='h-[26rem] w-full'/>
+          <Image src={HeroImage} alt="Hero-image" className='h-[26rem] w-full' priority={true} />
           <div className='absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4 typewriter'>
             <p className='font-bold text-3xl md:text-5xl bg-black/90 text-white w-fit p-1 main'>Ramp Ready</p>
             <p className='font-semibold text-xl md:text-2xl bg-black/90 text-white w-fit p-1 subtitle'>Making fashion Sustainable.</p>
@@ -120,14 +120,14 @@ function Homepage() {
           <p className='font-bold text-center text-3xl md:text-4xl'>Choose from a variety of categories for:</p>
           
           <p className='font-bold text-center text-xl md:text-3xl mt-10'>MEN</p>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-14 place-items-center'>
+          <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-14 place-items-center xl:mx-auto xl:w-fit'>
             {/* Formal */}
-            <div class="flip-card mt-10 w-[220px] h-[300px] md:w-[320px] md:h-[400px]">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
+            <div className="flip-card mt-10 w-[220px] h-[300px] md:w-[320px] md:h-[400px]">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
                   <h1 className='absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4 text-2xl md:text-4xl font-bold'>Formal Wear</h1> 
                 </div>
-                <div class="flip-card-back">
+                <div className="flip-card-back">
                   <Image src={MenFormal} alt="Men-formals" className='w-[220px] h-[300px] md:w-[350px] md:h-[400px]'/>
                   <Link href="/men">
                     <div className='absolute top-[86%] left-[50%] -translate-x-2/4 -translate-y-2/4 flex flex-row gap-x-2 bg-black text-white p-2 hover:scale-105 hover:border text-xl'>
@@ -142,12 +142,12 @@ function Homepage() {
             </div>
 
             {/* Casual */}
-            <div class="flip-card w-[220px] h-[300px] md:w-[320px] md:h-[400px] mt-10">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
+            <div className="flip-card w-[220px] h-[300px] md:w-[320px] md:h-[400px] mt-10">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
                   <h1 className='absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4 text-2xl md:text-4xl font-bold '>Casual Wear</h1> 
                 </div>
-                <div class="flip-card-back">
+                <div className="flip-card-back">
                   <Image src={MenCasual} alt="Men-formals" className='w-[220px] h-[300px] md:w-[350px] md:h-[400px]'/>
                   <Link href="/men">
                     <div className='absolute top-[86%] left-[50%] -translate-x-2/4 -translate-y-2/4 flex flex-row gap-x-2 bg-black text-white p-2 hover:scale-105 hover:border text-xl'>
@@ -162,12 +162,12 @@ function Homepage() {
             </div>
 
             {/* Traditional */}
-            <div class="flip-card w-[220px] h-[300px] md:w-[320px] md:h-[400px] mt-6">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
+            <div className="flip-card w-[220px] h-[300px] md:w-[320px] md:h-[400px] mt-6">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
                   <h1 className='absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4 text-2xl md:text-4xl font-bold'>Traditional Wear</h1> 
                 </div>
-                <div class="flip-card-back">
+                <div className="flip-card-back">
                   <Image src={MenTraditional} alt="Men-formals" className='w-[220px] h-[300px] md:w-[350px] md:h-[400px]'/>
                   <Link href="/men">
                     <div className='absolute top-[86%] left-[50%] -translate-x-2/4 -translate-y-2/4 flex flex-row gap-x-2 bg-black text-white p-2 hover:scale-105 hover:border text-xl'>
@@ -182,15 +182,15 @@ function Homepage() {
             </div>
           </div>
 
-          <p className='font-bold text-center text-xl md:text-3xl mt-10'>WOMEN</p>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-14 place-items-center'>
+          <p className='font-bold text-center text-xl md:text-3xl mt-32'>WOMEN</p>
+          <div id="womenContainer" className='grid grid-cols-1 md:grid-cols-2 xl:flex xl:flex-row xl:flex-wrap gap-14 place-items-center'>
             {/* Formal */}
-            <div class="flip-card w-[220px] h-[300px] md:w-[320px] md:h-[400px] mt-10">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
+            <div className="flip-card w-[220px] h-[300px] md:w-[320px] md:h-[400px] mt-10">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
                   <h1 className='absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4 text-2xl md:text-4xl font-bold'>Formal Wear</h1> 
                 </div>
-                <div class="flip-card-back">
+                <div className="flip-card-back">
                   <Image src={WomenFormal} alt="Men-formals" className='w-[220px] h-[300px] md:w-[350px] md:h-[400px]'/>
                   <Link href="/women">
                     <div className='absolute top-[86%] left-[50%] -translate-x-2/4 -translate-y-2/4 flex flex-row gap-x-2 bg-black text-white p-2 hover:scale-105 hover:border text-xl'>
@@ -205,12 +205,12 @@ function Homepage() {
             </div>
 
             {/* Casual */}
-            <div class="flip-card w-[220px] h-[300px] md:w-[320px] md:h-[400px] mt-10">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
+            <div className="flip-card w-[220px] h-[300px] md:w-[320px] md:h-[400px] mt-10">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
                   <h1 className='absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4 text-2xl md:text-4xl font-bold'>Casual Wear</h1> 
                 </div>
-                <div class="flip-card-back">
+                <div className="flip-card-back">
                   <Image src={WomenCasual} alt="Men-formals" className='w-[220px] h-[300px] md:w-[350px] md:h-[400px]'/>
                   <Link href="/women">
                     <div className='absolute top-[86%] left-[50%] -translate-x-2/4 -translate-y-2/4 flex flex-row gap-x-2 bg-black text-white p-2 hover:scale-105 hover:border text-xl'>
@@ -225,12 +225,12 @@ function Homepage() {
             </div>
 
             {/* Traditional */}
-            <div class="flip-card w-[220px] h-[300px] md:w-[320px] md:h-[400px] mt-6">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
+            <div className="flip-card w-[220px] h-[300px] md:w-[320px] md:h-[400px] mt-6">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
                   <h1 className='absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4 text-2xl md:text-4xl font-bold'>Traditional Wear</h1> 
                 </div>
-                <div class="flip-card-back">
+                <div className="flip-card-back">
                   <Image src={WomenTraditional} alt="Men-formals" className='w-[220px] h-[300px] md:w-[350px] md:h-[400px]'/>
                   <Link href="/women">
                     <div className='absolute top-[86%] left-[50%] -translate-x-2/4 -translate-y-2/4 flex flex-row gap-x-2 bg-black text-white p-2 hover:scale-105 hover:border text-xl'>
@@ -245,12 +245,12 @@ function Homepage() {
             </div>
 
             {/* Dresses */}
-            <div class="flip-card w-[220px] h-[300px] md:w-[320px] md:h-[400px] mt-6">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
+            <div className="flip-card w-[220px] h-[300px] md:w-[320px] md:h-[400px] mt-6">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
                   <h1 className='absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4 text-2xl md:text-4xl font-bold'>Dresses</h1> 
                 </div>
-                <div class="flip-card-back">
+                <div className="flip-card-back">
                   <Image src={WomenDresses} alt="Men-formals" className='w-[220px] h-[300px] md:w-[350px] md:h-[400px]'/>
                   <Link href="/women">
                     <div className='absolute top-[86%] left-[50%] -translate-x-2/4 -translate-y-2/4 flex flex-row gap-x-2 bg-black text-white p-2 hover:scale-105 hover:border text-xl'>
@@ -367,7 +367,7 @@ function Homepage() {
           <p className='text-3xl md:text-4xl font-bold text-center'>What our customers say about us</p>
           <Carousel responsive={responsive}>
             {/* Emily Cooper */}
-            <div className='border border-white h-[30rem] w-[14rem] md:h-[25rem] md:w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige'>
+            <div className='border border-white h-[30rem] w-[14rem] md:h-[25rem] md:w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige mx-auto'>
               <Image src={EmilyCooper} alt="arya-pic" className='w-24 rounded-full mx-auto border border-white border-2'/>
               <p className='font-bold text-xl text-center py-5 text-white'>Emily Cooper</p>
               <ImQuotesLeft className='text-white text-xl mx-auto'/>
@@ -376,7 +376,7 @@ function Homepage() {
             </div>
 
             {/* Gabriel */}
-            <div className='border border-white h-[30rem] w-[14rem] md:h-[25rem] md:w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige'>
+            <div className='border border-white h-[30rem] w-[14rem] md:h-[25rem] md:w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige mx-auto'>
               <Image src={Gabriel} alt="arya-pic" className='w-24 rounded-full mx-auto border border-white border-2'/>
               <p className='font-bold text-xl text-center py-5 text-white'>Gabriel</p>
               <ImQuotesLeft className='text-white text-xl mx-auto'/>
@@ -385,7 +385,7 @@ function Homepage() {
             </div>
 
             {/* Alfie */}
-            <div className='border border-white h-[30rem] w-[14rem] md:h-[25rem] md:w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige'>
+            <div className='border border-white h-[30rem] w-[14rem] md:h-[25rem] md:w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige mx-auto'>
               <Image src={Alfie} alt="arya-pic" className='w-24 rounded-full mx-auto border border-white border-2'/>
               <p className='font-bold text-xl text-center py-5 text-white'>Alfie</p>
               <ImQuotesLeft className='text-white text-xl mx-auto'/>
@@ -394,7 +394,7 @@ function Homepage() {
             </div>
 
             {/* Camille */}
-            <div className='border border-white h-[30rem] w-[14rem] md:h-[25rem] md:w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige'>
+            <div className='border border-white h-[30rem] w-[14rem] md:h-[25rem] md:w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige mx-auto'>
               <Image src={Camille} alt="arya-pic" className='w-24 rounded-full mx-auto border border-white border-2'/>
               <p className='font-bold text-xl text-center py-5 text-white'>Camille</p>
               <ImQuotesLeft className='text-white text-xl mx-auto'/>
@@ -403,7 +403,7 @@ function Homepage() {
             </div>
 
             {/* Mindy Chen */}
-            <div className='border border-white h-[30rem] w-[14rem] md:h-[25rem] md:w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige'>
+            <div className='border border-white h-[30rem] w-[14rem] md:h-[25rem] md:w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige mx-auto'>
               <Image src={MindyChen} alt="arya-pic" className='w-24 rounded-full mx-auto border border-white border-2'/>
               <p className='font-bold text-xl text-center py-5 text-white'>Mindy Chen</p>
               <ImQuotesLeft className='text-white text-xl mx-auto'/>
@@ -412,7 +412,7 @@ function Homepage() {
             </div>
 
             {/* Sylvie */}
-            <div className='border border-white h-[30rem] w-[14rem] md:h-[25rem] md:w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige'>
+            <div className='border border-white h-[30rem] w-[14rem] md:h-[25rem] md:w-[20rem] p-10 my-20 bg-beige shadow-lg shadow-beige mx-auto'>
               <Image src={Sylvie} alt="arya-pic" className='w-24 rounded-full mx-auto border border-white border-2'/>
               <p className='font-bold text-xl text-center py-5 text-white'>Sylvie</p>
               <ImQuotesLeft className='text-white text-xl mx-auto'/>
@@ -433,7 +433,7 @@ function Homepage() {
         </div>
       </div>
       <Footer/>
-    </>
+    </div>
   )
 }
 

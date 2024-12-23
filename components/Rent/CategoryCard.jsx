@@ -7,7 +7,7 @@ import BeigeCargoPants from "../../public/assets/Rent/Rent-Main/Men/Casual/botto
 function CategoryCard({image, brand, product, price}) {
   return (
     <>
-        <div className='border hover:transition hover:ease-linear hover:duration-400 hover:delay-200 hover:border-black p-2'>
+        <div className='border hover:transition hover:ease-linear hover:duration-400 hover:delay-200 hover:border-black p-2 max-w-[500px]'>
           <Image src={image} alt="beige cargo pants" className='w-[500px] border'/>
           <p className='font-bold'>{brand}</p>
           <p className=''>{product}</p>

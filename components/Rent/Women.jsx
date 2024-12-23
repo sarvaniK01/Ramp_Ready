@@ -40,15 +40,15 @@ function Women() {
 
 
   return (
-    <>
+    <div className=' max-w-[1536px] mx-auto'>
       <Navbar/>
       <div className='flex flex-col md:flex-row font-Playfair'>
         <div className='border-r border-black'>
           {/* Categories */}
-          <div className='py-10 md:pt-52 md:pb-20 px-20'>
-            <p className='pb-6 text-2xl font-bold'>Filters</p>
+          <div className='pb-10 pt-16 md:pt-40 md:pb-0 px-20'>
+            <p className='pb-6 text-2xl font-bold text-center md:text-left'>Filters</p>
             <Accordion>
-              <AccordionItem className="text-xl my-3 rent-links" header="Formal" onClick={() => updateToggle(1)}>
+              <AccordionItem className="text-xl my-3 rent-links mx-auto md:mx-0" header="Formal" onClick={() => updateToggle(1)}>
                 <div className='pl-3'>
                   {/* <p className='text-lg cursor-pointer hover:scale-105 rent-links'>Shirts</p>
                   <p className='text-lg cursor-pointer hover:scale-105 rent-links'>Trousers</p>
@@ -57,7 +57,7 @@ function Women() {
                 </div>
               </AccordionItem>
 
-              <AccordionItem className="text-xl my-3 rent-links" header="Casual" onClick={() => updateToggle(2)}>
+              <AccordionItem className="text-xl my-3 rent-links mx-auto md:mx-0" header="Casual" onClick={() => updateToggle(2)}>
                 {/* <div className='pl-3'>
                   <p className='text-lg cursor-pointer hover:scale-105 rent-links'>T-shirts</p>
                   <p className='text-lg cursor-pointer hover:scale-105 rent-links'>Shirts</p>
@@ -65,14 +65,14 @@ function Women() {
                 </div> */}
               </AccordionItem>
 
-              <AccordionItem className="text-xl my-3 rent-links" header="Traditional" onClick={() => updateToggle(3)}>
+              <AccordionItem className="text-xl my-3 rent-links mx-auto md:mx-0" header="Traditional" onClick={() => updateToggle(3)}>
                 {/* <div className='pl-3'>
                   <p className='text-lg cursor-pointer hover:scale-105 rent-links'>Kurtas</p>
                   <p className='text-lg cursor-pointer hover:scale-105 rent-links'>Sherwani</p>
                 </div> */}
               </AccordionItem>
 
-              <AccordionItem className="text-xl my-3 rent-links" header="Dresses" onClick={() => updateToggle(4)}>
+              <AccordionItem className="text-xl my-3 rent-links mx-auto md:mx-0" header="Dresses" onClick={() => updateToggle(4)}>
                 {/* <div className='pl-3'>
                   <p className='text-lg cursor-pointer hover:scale-105 rent-links'>Kurtas</p>
                   <p className='text-lg cursor-pointer hover:scale-105 rent-links'>Sherwani</p>
@@ -83,7 +83,7 @@ function Women() {
         </div>
 
         <div className='mx-auto'>
-          <p className='pt-5 md:pt-32 font-bold text-center text-5xl'>Women&apos;s Wear</p>
+          <p className='pt-5 md:pt-36 font-bold text-center text-5xl'>Women&apos;s Wear</p>
           {/* Category Cards */}
           <div className='pt-14 pb-20 '>
             <div className={toggle === 0 ? "show-content" : "content"}>
@@ -192,7 +192,7 @@ function Women() {
         </div>
       </div>
       <Footer/>
-    </>
+    </div>
   )
 }
 

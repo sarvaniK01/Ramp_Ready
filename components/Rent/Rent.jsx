@@ -39,14 +39,14 @@ const womenSlides = [
 function Rent() {
 
   return (
-    <>
+    <div className=' max-w-[1536px] mx-auto'>
       <Navbar/>
       <div>
-        <p className='pt-32 font-Playfair text-black text-center text-5xl font-bold'>Rent</p>
+        <p className='pt-16 md:pt-36 font-Playfair text-black text-center text-5xl font-bold'>Rent</p>
         <div className='relative pt-12 flex flex-col md:flex-row md:gap-x-5 lg:gap-x-20 justify-center font-Playfair text-xl py-20 mx-10 md:px-40'>
           {/* MEN */}
           <div className='border p-2 mb-10'>
-            <div className='w-[13rem] md:w-[19rem] mx-auto'>
+            <div className='w-[19rem] mx-auto'>
               <Slider infinite autoplay previousButton=" " nextButton=" ">
                 {menSlides.map((slide, index) => 
                   <div key={index} className=''>
@@ -71,7 +71,7 @@ function Rent() {
           
           {/* WOMEN */}
           <div className='border p-2 mb-10'>
-            <div className='w-[13rem] md:w-[19rem] mx-auto'>
+            <div className='w-[19rem] mx-auto'>
               <Slider infinite autoplay previousButton=" " nextButton=" ">
                 {womenSlides.map((slide, index) => 
                   <div key={index} className=''>
@@ -98,7 +98,7 @@ function Rent() {
       </div>
       
       <Footer/>
-    </>
+    </div>
   )
 }
 

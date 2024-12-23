@@ -16,10 +16,10 @@ import {
 
 function FAQ() {
   return (
-    <>
+    <div className=' max-w-[1536px] mx-auto'>
       <Navbar />
       <div className='font-Playfair md:pt-32'>
-        <p className='text-3xl md:text-5xl font-bold pt-16 text-center'>Frequently Asked Questions</p>
+        <p className='text-3xl md:text-5xl font-bold pt-16 text-center w-[70%] md:w-[100%] mx-auto'>Frequently Asked Questions</p>
         <Accordion
           allowMultipleExpanded
           allowZeroExpanded
@@ -167,7 +167,7 @@ function FAQ() {
         </Accordion>
       </div>
       <Footer/>
-    </>
+    </div>
   )
 }
 

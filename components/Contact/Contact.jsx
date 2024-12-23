@@ -51,9 +51,9 @@ function Contact() {
   }
 
   return (
-    <>
+    <div className=' max-w-[1536px] mx-auto'>
       <Navbar/>
-      <div className='pt-20 md:pt-36 pb-10 bg-black font-Playfair'>
+      <div className='pt-16 md:pt-36 pb-10 bg-black font-Playfair'>
         <p className='text-white text-3xl md:text-5xl font-bold text-center'>Contact Form</p>
         <Formik
           initialValues={initialValues}
@@ -117,7 +117,7 @@ function Contact() {
         </Formik>
       </div>
       <Footer/>
-    </>
+    </div>
   )
 }
 
